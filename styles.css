@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat ;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+} 
+.main-container {
+    width: 450px;
+    height: 697px;
+    background-color: white;
+    border-radius: 20px; 
+}
+.person {
+    border-radius: 20px 20px 0px 0px;
+    max-width: 100%;
+    
+}
+.summary {
+    font-size: 28px;
+    line-height: 37px;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: #1F2E55;
+    text-align: center;
+    padding: 48px 48px 17px 48px;
+}
+.description{
+    color: #717FA6;
+    font-size: 16px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding: 0px 48px;
+}
+.plan-box {
+    background-color: #F7F9FF;
+    width: 354px;
+    height:98px;
+    border-radius: 11px;
+    margin: auto;
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.plan {
+    display: flex;
+    padding: 25px;
+}
+.planInfo {
+    padding-left: 1.25rem;
+    text-align: center;
+}
+.plantitle {
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 21px;
+    color: #1F2E55;  
+}
+.cost {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #717FA6;
+    font-weight: 500;
+}
+.change {
+    text-decoration: underline;
+    color: #382AE1;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding: 1.5rem;
+    cursor: pointer;
+}
+.payment {
+    background-color: #382AE1;
+    border: none;
+    color: white;
+    height: 50px;
+    width: 354px;
+    border-radius: 11px;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+    font-size: 15px;
+    font-family: sans-serif; 
+    font-weight: 900;
+    cursor: pointer;
+}
+.order-pay {
+    margin: 48px;
+    margin-top: 2rem; 
+}
+.call-out{
+    color: rgba(113, 127, 166, 1);
+    font-size: 15px;
+    font-weight: 900;
+    font-family: sans-serif;
+    text-align: center;
+    cursor: pointer;
+    padding: 32px;
+}
+.change:hover{
+    color: #766CF1;
+    text-decoration: none;
+}
+.payment:hover {
+    background-color: #766CF1;
+}
+.call-out:hover {
+    color: #1F2E55;
+    font-weight: 900;
+}
+@media screen and (max-width: 425px){
+    .main-container{
+        max-width: 95%;
+        height: 75%;
+        
+    }
+    .order-pay {
+        margin: 30px auto 0 15px;
+    }
+}
+@media screen and (max-width: 375px){
+    .main-container{
+        max-width: 95%;
+        height: 90%;
+        
+    }
+    .payment {
+        width: 95%;
+    }
+    .call-out {
+        margin-right: 20px;
+    }
+    .plan-box {
+        width: 90%;
+    }
+}
+
+
+
+
+
