@@ -12,14 +12,18 @@ body{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 
 } 
 .main-container {
     width: 450px;
-    height: 697px;
     background-color: white;
     border-radius: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 }
 .person {
     border-radius: 20px 20px 0px 0px;
@@ -97,7 +101,10 @@ body{
     cursor: pointer;
 }
 .order-pay {
-    margin: 48px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
     margin-top: 2rem; 
 }
 .call-out{
@@ -122,32 +129,14 @@ body{
 }
 @media screen and (max-width: 425px){
     .main-container{
-        max-width: 95%;
-        height: 75%;
-        
+        width: 350px;
     }
-    .order-pay {
-        margin: 30px auto 0 15px;
+    .plan-box{
+        width: 300px;
     }
+    .payment{
+        width: 300px;
+    }
+    
+    
 }
-@media screen and (max-width: 375px){
-    .main-container{
-        max-width: 95%;
-        height: 90%;
-        
-    }
-    .payment {
-        width: 95%;
-    }
-    .call-out {
-        margin-right: 20px;
-    }
-    .plan-box {
-        width: 90%;
-    }
-}
-
-
-
-
-
